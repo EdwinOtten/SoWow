@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top"
+            android:adjustViewBounds="false"
+            android:src="@drawable/doge"
+            android:scaleType="centerCrop" />
+
+        <Button android:id="@+id/dummy_button"
+            style="?metaButtonBarButtonStyle"
+            android:layout_marginBottom="20sp"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_button"
+            android:textSize="22sp"
+            android:clickable="true"
+            android:layout_width="200dp"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="40sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="wow"
+            android:id="@+id/textView"
+            android:visibility="invisible"
+            android:layout_gravity="left|top"
+            android:textColor="#ff2f00b9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:layout_marginLeft="50sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="such amaze"
+            android:id="@+id/textView2"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ffdb01d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="10sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="much cool"
+            android:id="@+id/textView4"
+            android:visibility="invisible"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="#ffe61700" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="do like"
+            android:id="@+id/textView5"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:textColor="#ff00df09" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:layout_marginRight="10sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="so wow"
+            android:id="@+id/textView6"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="#ffede200" />
+
+    </FrameLayout>
+
+</FrameLayout>
